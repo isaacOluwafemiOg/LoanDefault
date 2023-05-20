@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
-from pycaret.classification import predict_model
+from pycaret.classification import predict_model,load_model
 
 
 def main():
@@ -45,9 +44,6 @@ def main():
         
     
 
-@st.cache
-def load_model(a):
-    return pickle.load(open(a,'rb'))
 
 if __name__ == '__main__':
     main()
