@@ -37,7 +37,7 @@ def main():
 
             prediction=predict_model(model,data)
 
-            st.subheader('Results')
+            st.subheader('Test Results')
             prediction
 
         else:
