@@ -9,7 +9,7 @@ def main():
     
     st.sidebar.header('Dataset to use')
     page = st.sidebar.selectbox("Format", ['Default','User Upload'])
-    model =load_model('LDefault.pkl')
+    model =load_model('LDefault')
 
     if page == 'Default':
         st.title('Predicting Default Test Data')
