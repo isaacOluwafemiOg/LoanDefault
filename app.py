@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from pycaret.classification import predict_model,load_model
+import pickle
+from pycaret.classification import predict_model
 
 
 def main():
@@ -9,7 +10,7 @@ def main():
     
     st.sidebar.header('Dataset to use')
     page = st.sidebar.selectbox("Format", ['Default Test Data','User Upload'])
-    model =load_model('LDefault')
+    model =load_model('LDefault.pkl')
 
     if page == 'Default Test Data':
         st.title('Predicting Default Test Data')
@@ -42,7 +43,9 @@ def main():
         else:
             st.write('No dataset Uploaded')
         
-    
+@st.cache
+def load_model(a):
+    return pickle.load(open(a,'rb'))  
 
 
 
