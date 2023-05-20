@@ -1,6 +1,5 @@
 streamlit
 pandas
 numpy
-pickle
-pycaret
+pycaret==2.0.0
 
