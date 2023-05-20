@@ -1,0 +1,18 @@
+2023-05-20 09:15:27,345:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-20 09:15:27,345:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-20 09:15:27,345:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-20 09:15:27,345:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-20 09:15:29,297:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-05-20 09:15:35,230:WARNING:C:\Users\Isaac Femi\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:288: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.0.2 when using version 1.2.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-05-20 09:15:35,933:INFO:Initializing predict_model()
+2023-05-20 09:15:35,933:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002BA6BB26D40>, estimator=DecisionTreeClassifier(random_state=7765), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002BA77D66B00>)
+2023-05-20 09:15:35,933:INFO:Checking exceptions
+2023-05-20 09:15:35,949:INFO:Preloading libraries
