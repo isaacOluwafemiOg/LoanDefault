@@ -8,10 +8,10 @@ def main():
 
     
     st.sidebar.header('Dataset to use')
-    page = st.sidebar.selectbox("Format", ['Default','User Upload'])
+    page = st.sidebar.selectbox("Format", ['Default Test Data','User Upload'])
     model =load_model('LDefault')
 
-    if page == 'Default':
+    if page == 'Default Test Data':
         st.title('Predicting Default Test Data')
         st.subheader('Dataset Preview')
         test = pd.read_csv('test.csv')
