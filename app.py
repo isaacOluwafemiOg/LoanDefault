@@ -13,7 +13,7 @@ def main():
 
     if page == 'Default Test Data':
         st.title('Predicting Default Test Data')
-        st.subheader('Dataset Preview')
+        st.subheader('Test Dataset Preview')
         test = pd.read_csv('test.csv')
         test
 
@@ -31,7 +31,7 @@ def main():
         if u_data is not None:
             data = pd.read_csv(u_data,index_col = 'ID')
 
-            st.subheader('Dataset Preview')
+            st.subheader('Uploaded Dataset Preview')
             data
 
             prediction=predict_model(model,data)
