@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from pycaret.classification import predict_model,load_model
+from pycaret.classification import *
 
 
 def main():
