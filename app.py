@@ -4,7 +4,9 @@ import numpy as np
 from sklearn.metrics import f1_score,accuracy_score
 import sklearn
 import pickle
+from PIL import Image
 
+imag=Image.open('dataware.jpg')
 
 @st.cache_data
 def train_model():
@@ -39,10 +41,13 @@ def prepare(test):
     return (data)
 
 def main():
-    
+    st.sidebar.image(imag,width=80)#,use_column_width=True)
     st.sidebar.header('Dataset to use')
     page = st.sidebar.selectbox("Data Input", ['Preloaded','User Upload'])
-    
+    st.sidebar.markdown('''
+    ---
+    Product of [Dataware Tech](https://mydataware.com)
+    ''')
     
     
     st.title('Loan Default Predictor')
