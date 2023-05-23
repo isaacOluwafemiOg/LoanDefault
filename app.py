@@ -71,7 +71,7 @@ def main():
             
             pred_view.columns = ['Loan Default']
             
-            pred_view['Loan Default'] = np.where(pred_view['Prediction']==0,'Not Likey','Potential Defaulter')
+            pred_view['Loan Default'] = np.where(pred_view['Loan Default']==0,'Not Likey','Potential Defaulter')
             
             pred_view
             
