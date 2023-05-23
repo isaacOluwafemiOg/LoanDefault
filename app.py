@@ -10,8 +10,8 @@ import xgboost
 @st.cache_data
 def train_model():
     test = pd.read_csv('test.csv')
-    data = pd.read_csv('better_train.csv')
-    model =pickle.load(open('b_trained_model.pkl','rb'))
+    data = pd.read_csv('train.csv')
+    model =pickle.load(open('loan_trained.pkl','rb'))
     
     X = data.drop('Status',axis=1)
     y = data['Status']
@@ -25,7 +25,7 @@ def train_model():
 
 @st.cache_data
 def predict_test(pdata):
-    model =pickle.load(open('b_trained_model.pkl','rb'))
+    model =pickle.load(open('loan_trained.pkl','rb'))
     pred = model.predict(pdata)
     
     return (pred)
