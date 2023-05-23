@@ -4,7 +4,6 @@ import numpy as np
 from sklearn.metrics import f1_score,accuracy_score
 import sklearn
 import pickle
-import xgboost
 
 
 @st.cache_data
